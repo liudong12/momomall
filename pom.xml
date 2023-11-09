@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>    <!--一创建就有，第 14-->
+    <groupId>com.momoteks.momomall</groupId>  <!--一创建就有，第 14-->
+    <artifactId>momomall</artifactId>  <!--一创建就有，第 14-->
+    <version>0.0.1-SNAPSHOT</version>  <!--一创建就有，第 14-->
+    <name>momomall</name>  <!--一创建就有，第 14-->
+    <description>聚合服务</description>  <!--一创建就有，第 14-->
+    <!--    用来聚合项目，相当于用我们这个大项目把其他小项目都聚合起来。第15课-->
+    <packaging>pom</packaging>
+
+    <modules>  <!--一创建就有，第 14-->
+        <module>momomall-coupon</module>
+        <module>momomall-member</module>
+        <module>momomall-order</module>
+        <module>momomall-product</module>
+        <module>momomall-ware</module>
+<!--        <module>renren-fast</module>-->
+<!--        <module>renren-generator</module>-->
+<!--        <module>momomall-common</module>-->
+<!--        添加好以后右边的maven标签里面就自动会有了，要是没的话，点一下刷新就行。然后还要点加号添加momomall的pom来添加一个root，这样当我们点击momomall clean 的时候，所有的模块都会跟着一起 clean-->
+    </modules>
+</project>

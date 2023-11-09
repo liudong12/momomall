@@ -15,3 +15,23 @@ buildNumber.properties
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
+
+
+
+
+#设置一下哪些文件需要忽略，也就是不用提交到github。把所有小项目里面的垃圾文件都忽略掉
+#任意路径下的mvnw文件都要忽略掉，**表示任意路径
+#忽略以后，这个文件会变成灰色
+#然后你去左边commit里面刷新一下，待提交的文件数量会变少
+#然后我们右键未提交的文件 add vcs 将这些文件纳入到版本控制 （Idea的版本控制，不是git的)
+#然后右键commit提交到git
+#我们只提交我们的源码和pom文件，编译以后的文件也不用提交 备注：第 14，右侧maven点compile可以编译整个或单独的模块
+**/mvnw
+**/mvnw.cmd
+
+**/.mvn
+**/target/
+
+.idea
+
+**/.gitignore
